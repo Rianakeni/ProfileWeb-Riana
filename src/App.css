@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: red;
+  height: 88px;
 }
 
-.App-link {
-  color: #61dafb;
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.profile {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.description h3 {
+  margin-top: 0;
+}
+
+.description p {
+  color: #666;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stats p {
+  margin: 5px 0;
+}
+
+.services {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services h3 {
+  margin-top: 0;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services ul li {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-media li a {
+  text-decoration: none;
+  color: #007bff;
 }
