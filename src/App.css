@@ -53,23 +53,38 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
 main {
   display: flex;
   padding: 20px;
 }
 
 .profile {
-  flex: 2;
-  background-color: #fff;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  background-color: #d4c9c7;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
   margin-right: 20px;
+  border-radius: 0 150px 0 0;
+}
+.profile-wrapper {
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-picture img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+  width: 400px;
+  height: 500px;
+  border-radius: 0%;
 }
 
 .description {
@@ -80,6 +95,17 @@ main {
   margin-top: 0;
 }
 
+.description h2 {
+  color: white;
+  margin-top: 0;
+  font-size: smaller;
+}
+
+.description h1 {
+  color: #ffe987;
+  font-size: 40px;
+}
+
 .description p {
   color: #666;
 }
@@ -87,7 +113,7 @@ main {
 button {
   padding: 10px 20px;
   border: none;
-  background-color: #007bff;
+  background-color: #c2eabd;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -106,10 +132,11 @@ button:hover {
 }
 
 .services {
-  flex: 1;
-  background-color: #fff;
+  flex: 3;
+  background-color: #d4c9c7;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 0 150px;
 }
 
 .services h3 {
@@ -125,11 +152,18 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.text-left {
+  color: black;
+}
+
+.text-left h3 {
+  color: black;
+}
+
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #d4c9c7;
 }
 
 .social-media {
@@ -145,4 +179,35 @@ footer {
 .social-media li a {
   text-decoration: none;
   color: #007bff;
+}
+
+.namabesar {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+  padding-top: 20px;
+  background-color: #d4c9c7;
+}
+
+.namabesar h1 {
+  flex: 1;
+  font-size: 50px;
+}
+
+.Sectionmiddle2 {
+  flex: 3;
+}
+
+.center {
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: #d4c9c7;
+}
+
+.container-main {
+  background-color: #d4c9c7;
+  padding: 5px;
 }

@@ -1,15 +1,19 @@
+// import profile from "../../assets/img/profile.jpg";
+
 const SectionRight = () => {
   return (
     <section className="profile">
-      <h2>Natalie Sihombing</h2>
-      <div className="profile-picture">
-        <img src="profile.jpg" alt="Profile Picture" />
-      </div>
+      {/* <div className="profile-wrapper">
+        <div className="profile-picture">
+          <img src={profile} alt="Profile Picture" />
+        </div>
+      </div> */}
       <div className="description">
-        <h3>Web Specialist based in Jakarta</h3>
+        <h1>Riana Keni</h1>
+        <h2>Data Analyst</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Spesialis data yang mahir dalam menggali tren, pola, dan cerita dari
+          data kompleks
         </p>
         <button>Hire me</button>
         <div className="stats">

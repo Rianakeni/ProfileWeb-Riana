@@ -1,5 +1,3 @@
-import { FOCUSABLE_SELECTOR } from "@testing-library/user-event/dist/utils";
-
 const Footer = () => {
   return (
     <footer>
@@ -7,16 +5,16 @@ const Footer = () => {
       <ul class="social-media">
         {" "}
         <li>
-          <a href="#">Facebook</a>
+          <a href="https://www.facebook.com/riana.keni">Facebook</a>
         </li>{" "}
         <li>
-          <a href="#">WhatApp</a>
+          <a href="https://wa.me/628995531878">WhatApp</a>
         </li>{" "}
         <li>
-          <a href="#">Instagram</a>
+          <a href="https://www.instagram.com/rianakenii">Instagram</a>
         </li>{" "}
         <li>
-          <a href="#">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/riana-keni/">LinkedIn</a>
         </li>{" "}
       </ul>{" "}
     </footer>
