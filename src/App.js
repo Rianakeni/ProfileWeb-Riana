@@ -9,14 +9,12 @@ import {
 
 const App = () => {
   return (
-    <div className="container-all">
-      <Header />
+    <div>
       <div className="center">
         <div className="namabesar">
           <h1>Riana Keni</h1>
         </div>
       </div>
-
       <main className="container-main">
         <SectionRight />
         <Sectionmiddle />

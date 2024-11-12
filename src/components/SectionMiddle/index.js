@@ -1,4 +1,4 @@
-import profile from "../../assets/img/profile.png";
+import profile from "../../assets/img/Profile.png";
 
 const Sectionmiddle = () => {
   return (

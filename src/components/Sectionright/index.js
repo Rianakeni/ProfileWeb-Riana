@@ -3,25 +3,24 @@
 const SectionRight = () => {
   return (
     <section className="profile">
-      {/* <div className="profile-wrapper">
-        <div className="profile-picture">
-          <img src={profile} alt="Profile Picture" />
-        </div>
-      </div> */}
       <div className="description">
-        <h1>Riana Keni</h1>
+        <h1>Expertise</h1>
         <h2>Data Analyst</h2>
         <p>
-          Spesialis data yang mahir dalam menggali tren, pola, dan cerita dari
-          data kompleks
+          Exceptionally skilled in uncovering trends, patterns, and compelling
+          narratives hidden within complex datasets, capable of transforming raw
+          information into meaningful insights that drive strategic
+          decision-making and innovation.
         </p>
-        <button>Hire me</button>
+        <a href="https://wa.me/628995531878">
+          <button>Hire me</button>
+        </a>
         <div className="stats">
           <p>
-            <strong>13 Years</strong> Experience
+            <strong>1 Years</strong> Experience
           </p>
           <p>
-            <strong>256+</strong> Clients
+            <strong>100+</strong> Clients
           </p>
           <p>
             <strong>99.8%</strong> Satisfaction

@@ -7,9 +7,9 @@ const Footer = () => {
         <li>
           <a href="https://www.facebook.com/riana.keni">Facebook</a>
         </li>{" "}
-        <li>
+        {/* <li>
           <a href="https://wa.me/628995531878">WhatApp</a>
-        </li>{" "}
+        </li>{" "} */}
         <li>
           <a href="https://www.instagram.com/rianakenii">Instagram</a>
         </li>{" "}
