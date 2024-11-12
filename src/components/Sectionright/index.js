@@ -19,7 +19,11 @@ const SectionRight = () => {
         <h1>{sectionRight.title2}</h1>
         <h2>{sectionRight.expertise}</h2>
         <p>{sectionRight.skilldescription}</p>
-        <a href="https://wa.me/628995531878">
+        <a
+          href={sectionRight.hireMe || "#"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Hire me</button>
         </a>
         <div className="stats">

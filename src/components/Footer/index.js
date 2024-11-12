@@ -1,20 +1,49 @@
+import { useEffect, useState } from "react";
+import { getDatabase, ref, onValue } from "firebase/database";
+
 const Footer = () => {
+  const [footer, setFooter] = useState({});
+
+  useEffect(() => {
+    const db = getDatabase();
+    const FooterRef = ref(db, "Footer/");
+    onValue(FooterRef, (snapshot) => {
+      const data = snapshot.val();
+      setFooter(data);
+    });
+  }, []);
+
   return (
     <footer>
       {" "}
       <ul class="social-media">
         {" "}
         <li>
-          <a href="https://www.facebook.com/riana.keni">Facebook</a>
+          <a
+            href={footer.facebook || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
         </li>{" "}
-        {/* <li>
-          <a href="https://wa.me/628995531878">WhatApp</a>
-        </li>{" "} */}
         <li>
-          <a href="https://www.instagram.com/rianakenii">Instagram</a>
+          <a
+            href={footer.instagram || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
         </li>{" "}
         <li>
-          <a href="https://www.linkedin.com/in/riana-keni/">LinkedIn</a>
+          <a
+            href={footer.linkedlin || "#"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>{" "}
       </ul>{" "}
     </footer>
