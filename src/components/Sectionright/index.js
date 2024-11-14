@@ -3,7 +3,6 @@ import { getDatabase, ref, onValue } from "firebase/database";
 
 const SectionRight = () => {
   const [sectionRight, setSectionRight] = useState({});
-
   useEffect(() => {
     const db = getDatabase();
     const sectionRightRef = ref(db, "sectionRight/");

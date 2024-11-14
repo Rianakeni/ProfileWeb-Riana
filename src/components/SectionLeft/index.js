@@ -3,6 +3,7 @@ import { getDatabase, ref, onValue } from "firebase/database";
 
 const SectionLeft = () => {
   const [sectionLeft, setSectionLeft] = useState({});
+  const [exp, setExp] = useState([]);
 
   useEffect(() => {
     const db = getDatabase();
@@ -13,23 +14,28 @@ const SectionLeft = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const db = getDatabase();
+    const expRef = ref(db, "exp/");
+    onValue(expRef, (snapshot) => {
+      const data = snapshot.val();
+      setExp(data);
+    });
+  }, []);
+
   return (
     <aside className="services">
       <div className="text-left">
         <h1>{sectionLeft.title3}</h1>
         <ul>
-          <li>
-            <h4>{sectionLeft.Experience1}</h4>
-            <p>{sectionLeft.experience1Desc}</p>
-          </li>
-          <li>
-            <h4>{sectionLeft.Experience2}</h4>
-            <p>{sectionLeft.experience2Desc}</p>
-          </li>
-          <li>
-            <h4>{sectionLeft.Experience3}</h4>
-            <p>{sectionLeft.experience3Desc}</p>
-          </li>
+          {exp.map((item) => (
+            <ul>
+              <li>
+                <h4>{item.title}</h4>
+                <p>{item.subtitle}</p>
+              </li>
+            </ul>
+          ))}
           <div className="line"></div>
           <div className="organisation">
             <h4>{sectionLeft.subtitle}</h4>
